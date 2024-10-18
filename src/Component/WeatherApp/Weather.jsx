@@ -29,7 +29,7 @@ const Weather = () => {
   };
   const handleSearch = (city) => {
     fetch(
-      "http://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=db36225d66ea15f819957042ffee77f2"
+      `http://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=db36225d66ea15f819957042ffee77f2`
     )
       .then((res) => res.json())
       .then((data) => {
